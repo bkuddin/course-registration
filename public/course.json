@@ -1,0 +1,75 @@
+[
+    {
+      "id": "1",
+      "cover": "https://i.ibb.co/G359dpW/html.jpg",
+      "title": "HTML Essentials: Building the Web of Tomorrow",
+      "body": "HTML Essentials: Master the fundamentals of web development with HTML - the backbone of the internet.",
+      "price": 49.99,
+      "credit": 2
+    },
+    {
+      "id": "2",
+      "cover": "https://i.ibb.co/cNZvz13/css.jpg",
+      "title": "CSS Mastery: Craft Stunning Web Designs with Style",
+      "body": "CSS Mastery: Create captivating web designs using CSS, from layouts to animations.",
+      "price": 29.95,
+      "credit": 3
+    },
+    {
+      "id": "3",
+      "cover": "https://i.ibb.co/KGDdxqk/js.jpg",
+      "title": "JavaScript Unleashed: From Basics to Beyond",
+      "body": "JavaScript Unleashed: Level up your coding skills with JavaScript - the language of interactivity.",
+      "price": 99.99,
+      "credit": 7
+    },
+    {
+      "id": "4",
+      "cover": "https://i.ibb.co/X8cLJ8Q/Tailwind.jpg",
+      "title": "Tailwind CSS: Streamline Your Web Development",
+      "body": "Tailwind CSS: Speed up web development with the power of Tailwind CSS.",
+      "price": 19.99,
+      "credit": 2
+    },
+    {
+      "id": "5",
+      "cover": "https://i.ibb.co/wS6ZhMG/ui-ux.jpg",
+      "title": "UI/UX Design Demystified: Crafting User-Centric Interfaces",
+      "body": "UI/UX Design Demystified: Craft user-friendly interfaces and elevate user experiences.",
+      "price": 14.99,
+      "credit": 3
+    },
+    {
+      "id": "6",
+      "cover": "https://i.ibb.co/7QLcrt1/wordpress.jpg",
+      "title": "WordPress Wizard: Create Websites the Easy Way",
+      "body": "Experience luxury with Product 6. It's designed for those who demand the best.",
+      "price": 199.99,
+      "credit": 5
+    },
+    {
+      "id": "7",
+      "cover": "https://i.ibb.co/sjg7XXp/python.jpg",
+      "title": "Python Programming Pro: Dive into Coding Awesomeness",
+      "body": "Python Programming Pro: Dive into Python and unlock endless coding possibilities.",
+      "price": 79.95,
+      "credit": 9
+    },
+    {
+      "id": "8",
+      "cover": "https://i.ibb.co/ysWDcm4/Learn-seo.jpg",
+      "title": "SEO Wizardry: Rule Google and Rank #1!",
+      "body": "SEO Wizardry: Dominate search engines and boost your online presence with SEO strategies.",
+      "price": 59.99,
+      "credit": "Good"
+    },
+    {
+      "id": "9",
+      "cover": "https://i.ibb.co/5v1H5X5/photo-editing.jpg",
+      "title": "Photo Editing Pro: Transform Pixels to Perfection",
+      "body": "Photo Editing Pro: Transform photos into art with expert photo editing techniques.",
+      "price": 9.99,
+      "credit": 2
+    }
+  ]
+  
