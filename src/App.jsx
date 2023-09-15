@@ -2,28 +2,64 @@ import { useState } from 'react'
 import Courses from './components/Courses/Courses'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
-import SelectedCourses from './components/SelectedCourses/SelectedCourses'
+import SelectedCourses from './components/SelectedCourses/SelectedCourses'	
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
   const [selectedCourses, setSelectedCourses] = useState([]);
+  const [hours, setHours] = useState(0);
+  const [remainingTime, setRemainingTime] = useState(0)
+
+
+  
 
   const handleSelectedCourses = course =>{
-    // console.log('Selected Courese', id);
-    const newSelectedCourses = [...selectedCourses, course];
-    console.log(newSelectedCourses);
-    setSelectedCourses(newSelectedCourses);
+    // Handle Validation for duplicate selection
+    const isExist = selectedCourses.find(item => item.id === course.id );
+
+    let credit_time = course.credit; 
+
+    if(isExist){
+       
+       toast.warn("'You've taken this particular course previously, right?'", {position: "top-center"});
+    }
+    else{
+      const newSelectedCourses = [...selectedCourses, course];          
+      setSelectedCourses(newSelectedCourses);
+
+      // New hour added to previous hour
+      selectedCourses.forEach(hour => { credit_time +=  hour.credit} )
+      setHours(credit_time)
+
+      // Minus remaining time 
+        let remainingTime  = 20 - credit_time;
+        // console.log(remainingTime);
+        setRemainingTime(remainingTime)
+     
+    }
+    
   }
+
+ 
  
 
   return (
     <>
        <Header></Header>
-       <div className='flex justify-center gap-4 my-20 max-w-screen-2xl mx-14'>
-         <Courses handleSelectedCourses={handleSelectedCourses}></Courses>
-         <SelectedCourses selectedCourses={selectedCourses}></SelectedCourses>
-       </div>
+       <div className='flex justify-center gap-8 my-20 max-w-screen-2xl mx-14'>
+         <Courses handleSelectedCourses={handleSelectedCourses} ></Courses>
+         <SelectedCourses 
+         selectedCourses={selectedCourses} 
+         hours={hours}
+         remainingTime={remainingTime}>
 
+         </SelectedCourses>
+
+         <ToastContainer/>
+       </div>
+       
        <Footer></Footer>
     </>
   )

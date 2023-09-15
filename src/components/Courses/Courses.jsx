@@ -14,14 +14,15 @@ const Courses = ({handleSelectedCourses}) => {
     
     return (
         <div className="md:w-9/12">
-            <h3>Courses: {courses.length}</h3>
+          
             <div className="grid md:grid-cols-3 gap-4">
             
                 {
                     courses.map(course => <Course 
                         key={course.id} 
                         course={course} 
-                        handleSelectedCourses={handleSelectedCourses}>
+                        handleSelectedCourses={handleSelectedCourses}
+                       >
 
                         </Course>)
                 }
@@ -33,6 +34,7 @@ const Courses = ({handleSelectedCourses}) => {
 
 Courses.propTypes = {
     handleSelectedCourses: PropTypes.func.isRequired,
+    
 }
 
 export default Courses;

@@ -15,6 +15,8 @@ const Course = ({ course, handleSelectedCourses }) => {
           <p>Credit: {credit}</p>
         </div>
         <button className="btn btn-neutral" onClick={()=>handleSelectedCourses(course)}>Select</button>
+        
+        
       </div>
       
     </div>
@@ -24,6 +26,7 @@ const Course = ({ course, handleSelectedCourses }) => {
 Course.propTypes = {
   course: PropTypes.object.isRequired,
   handleSelectedCourses: PropTypes.func.isRequired,
+  
 };
 
 export default Course;

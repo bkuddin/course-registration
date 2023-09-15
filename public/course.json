@@ -5,7 +5,7 @@
       "title": "HTML Essentials: Building the Web of Tomorrow",
       "body": "HTML Essentials: Master the fundamentals of web development with HTML - the backbone of the internet.",
       "price": 49.99,
-      "credit": 2
+      "credit": 7
     },
     {
       "id": "2",
@@ -29,7 +29,7 @@
       "title": "Tailwind CSS: Streamline Your Web Development",
       "body": "Tailwind CSS: Speed up web development with the power of Tailwind CSS.",
       "price": 19.99,
-      "credit": 2
+      "credit": 5
     },
     {
       "id": "5",
@@ -61,7 +61,7 @@
       "title": "SEO Wizardry: Rule Google and Rank #1!",
       "body": "SEO Wizardry: Dominate search engines and boost your online presence with SEO strategies.",
       "price": 59.99,
-      "credit": "Good"
+      "credit": 12
     },
     {
       "id": "9",
