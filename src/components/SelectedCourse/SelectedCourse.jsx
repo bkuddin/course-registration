@@ -6,7 +6,7 @@ const SelectedCourse = ({course}) => {
   
    
     return (
-        <div className="my-4">          
+        <div className="my-4 pl-8">          
             <li className="font-semibold text-gray-400">{title} </li>            
         </div>
     );

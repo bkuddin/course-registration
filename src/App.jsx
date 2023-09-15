@@ -62,7 +62,7 @@ function App() {
   return (
     <>
        <Header></Header>
-       <div className='flex justify-center gap-8 my-20 max-w-screen-2xl mx-14'>
+       <div className='md:flex my-20 md:mx-14 mx-4'>
          <Courses handleSelectedCourses={handleSelectedCourses} ></Courses>
          <SelectedCourses 
          selectedCourses={selectedCourses} 

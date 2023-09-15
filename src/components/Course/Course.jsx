@@ -10,11 +10,12 @@ const Course = ({ course, handleSelectedCourses }) => {
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{body}</p>
+        <hr />
         <div className="card-actions justify-end">
-          <p>Price: {price}</p>
-          <p>Credit: {credit}</p>
+          <p className="font-semibold">Price: <span className="text-sky-500 font-semibold">{price}</span></p>
+          <p className="font-semibold text-right">Credit: <span className="text-red-500">{credit} hr</span></p>
         </div>
-        <button className="btn btn-neutral" onClick={()=>handleSelectedCourses(course)}>Select</button>
+        <button className="btn bg-sky-500 text-white hover:text-sky-500" onClick={()=>handleSelectedCourses(course)}>Select</button>
         
         
       </div>
