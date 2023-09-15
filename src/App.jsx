@@ -50,7 +50,7 @@ function App() {
       // Total price
       selectedCourses.forEach(property => {previous_price += property.price});
       setTotalPrice((previous_price).toFixed(2)) 
-      console.log('This is', previous_price);
+      // console.log('This is', previous_price);
      
     }
     
