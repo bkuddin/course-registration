@@ -6,14 +6,15 @@ const SelectedCourse = ({course}) => {
   
    
     return (
-        <div>          
-            <li>{title} </li>            
+        <div className="my-4">          
+            <li className="font-semibold text-gray-400">{title} </li>            
         </div>
     );
 };
 
 SelectedCourse.propTypes = {
     course: PropTypes.object.isRequired, 
+    
 }
 
 export default SelectedCourse;
